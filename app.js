@@ -45,8 +45,8 @@ async function main(){
     }
     //Read
     try {
-        //const findData = await collection.findOne({name: 'Justine'});
-        //console.log('documents trouvés', findData);
+        const findData = await collection.findOne({name: 'Justine'});
+        console.log('documents trouvés', findData);
         const findMultipleData = await collection.find({age: 30});
         console.log(await findMultipleData.toArray());
     } catch (e) {
@@ -70,8 +70,8 @@ async function main(){
     
     //Delete
     try {
-        //const deletePierre = await collection.deleteOne({ name: 'Pauline '});
-        //console.log(await deletePierre);
+        const deletePierre = await collection.deleteOne({ name: 'Pauline '});
+        console.log(await deletePierre);
         const deleteEveryone = await collection.deleteMany({ age: 35});
         console.log(await deleteEveryone);
     } catch (e) {
