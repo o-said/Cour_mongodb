@@ -11,7 +11,7 @@ async function main(){
     const db = client.db('myTask');
     //on se connecte à la collection
     const collection = db.collection('document');
-    /*
+    
     //on insère un document
     const insertStuff = await collection.insertMany([{ a: 1}, {b: 2}, {c: 3}]);
     //on affiche les  documents insérés dans la collection
@@ -67,7 +67,7 @@ async function main(){
     } catch (e) {
         throw e;
     }
-    **/
+    
     //Delete
     try {
         //const deletePierre = await collection.deleteOne({ name: 'Pauline '});
